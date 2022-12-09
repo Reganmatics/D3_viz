@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/page2.css">
+        <title>page2</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <div>
+            this goes to the left
+        </div>
+        <div>
+            <p class="lsd">Last Seven Days</p>
+        </div>
+
+        <article>
+            <h1>this is the article tag</h1>
+            <p>the article content goes in here</p>
+            <script>
+                const menu_items = ['Home','item1','item2'];
+                menu_div = d3.select('article').append('div').append('ul');
+                for(let i=0; i < menu_items.length; i++) {
+                    menu_div.append('li').text(`${menu_items[i]}`);
+                    menu_div.style('background-color', '#122334');
+                }
+            </script>
+        </article>
+
+        <aside>
+            <h2>this is the aside tag</h2>
+            <p>the aside content goes in here</p>
+            <script>
+                const data = [20,13,22,31,12]
+                d1 = d3.select('aside').append('div');
+                d1.append('p').text('The visuals go in here.');
+                plot_area = d3.select('aside');
+            </script>
+        </aside>
+    </body>
+</html>

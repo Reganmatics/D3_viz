@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    background-image: url("https://www.w3schools.com/css/lights600x400.jpg");
+    color: white;
+    font-family: helvetica;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+p {
+      font-size: 22px;
+}
+input {
+      border: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+input[type="submit"] {
+    background: red;
+    color: white;
+    border-radius: 5px;
+}
